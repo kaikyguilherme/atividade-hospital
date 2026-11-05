@@ -1,0 +1,388 @@
+@import url("hospital.css");
+
+.team-hero {
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 86% 30%, rgba(201, 228, 216, 0.48), transparent 34%),
+        linear-gradient(115deg, #f7faf8 0%, #f2f8f5 54%, #edf6f1 100%);
+}
+
+.team-hero-inner {
+    display: grid;
+    min-height: 390px;
+    grid-template-columns: 1fr 0.75fr;
+    align-items: center;
+    gap: 48px;
+    padding-block: 62px;
+}
+
+.team-hero h1 {
+    margin: 18px 0 14px;
+    font-size: clamp(39px, 5vw, 57px);
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 1.13;
+}
+
+.team-hero h1 span,
+.team-heading h2 span {
+    color: var(--color-primary);
+}
+
+.team-hero p {
+    max-width: 500px;
+    margin-bottom: 23px;
+    color: #60736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.team-hero-art {
+    position: relative;
+    display: grid;
+    width: min(100%, 310px);
+    aspect-ratio: 1;
+    justify-self: center;
+    place-items: center;
+    border-radius: 48% 52% 43% 57% / 49% 43% 57% 51%;
+    background: linear-gradient(145deg, #dceee5, #c8e3d6);
+}
+
+.team-hero-art::before {
+    position: absolute;
+    width: 76%;
+    height: 76%;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    content: "";
+}
+
+.team-art-ring {
+    position: absolute;
+    border: 1px solid rgba(40, 124, 109, 0.16);
+    border-radius: 50%;
+}
+
+.team-art-ring.ring-one {
+    width: 62%;
+    height: 62%;
+}
+
+.team-art-ring.ring-two {
+    width: 43%;
+    height: 43%;
+}
+
+.team-art-plus {
+    z-index: 1;
+    display: grid;
+    width: 82px;
+    height: 82px;
+    place-items: center;
+    border: 8px solid rgba(255, 255, 255, 0.55);
+    border-radius: 26px;
+    background: var(--color-primary);
+    box-shadow: 0 18px 40px rgba(38, 108, 91, 0.2);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.team-art-heart {
+    position: absolute;
+    z-index: 2;
+    top: 19%;
+    right: 18%;
+    display: grid;
+    width: 43px;
+    height: 43px;
+    place-items: center;
+    border: 1px solid #e8f1ec;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(39, 84, 69, 0.1);
+    color: var(--color-primary);
+    font-size: 23px;
+}
+
+.team-section {
+    padding-block: 76px 94px;
+}
+
+.team-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 28px;
+    margin-bottom: 33px;
+}
+
+.team-heading h2 {
+    margin: 10px 0 0;
+    font-size: clamp(29px, 4vw, 39px);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 1.2;
+}
+
+.team-heading > p {
+    max-width: 345px;
+    margin: 0 0 4px;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 19px;
+    align-items: stretch;
+}
+
+.professional-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e8efeb;
+    border-radius: 14px;
+    background: #fff;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.professional-card:hover {
+    transform: translateY(-3px);
+    border-color: #d3e6dc;
+    box-shadow: 0 14px 32px rgba(36, 83, 67, 0.08);
+}
+
+.professional-card-header {
+    position: relative;
+    display: grid;
+    min-height: 132px;
+    place-items: center;
+    overflow: hidden;
+}
+
+.professional-card-header::before,
+.professional-card-header::after {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    border-radius: 50%;
+    content: "";
+}
+
+.professional-card-header::before {
+    width: 172px;
+    height: 172px;
+}
+
+.professional-card-header::after {
+    width: 122px;
+    height: 122px;
+}
+
+.header-peach {
+    background: #fbf0e9;
+}
+
+.header-sage {
+    background: #e9f3ed;
+}
+
+.header-blue {
+    background: #eaf2f8;
+}
+
+.header-rose {
+    background: #f9edf0;
+}
+
+.header-lilac {
+    background: #f1eef8;
+}
+
+.professional-portrait {
+    z-index: 1;
+    display: grid;
+    width: 76px;
+    height: 76px;
+    place-items: center;
+    border: 6px solid rgba(255, 255, 255, 0.72);
+    border-radius: 50%;
+    box-shadow: 0 8px 22px rgba(39, 84, 69, 0.09);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.portrait-peach {
+    background: #f3ddce;
+    color: #ad7653;
+}
+
+.portrait-sage {
+    background: #d3e7d9;
+    color: #45795e;
+}
+
+.portrait-blue {
+    background: #d7e6f0;
+    color: #547b94;
+}
+
+.portrait-rose {
+    background: #f0dce2;
+    color: #a76e7e;
+}
+
+.portrait-lilac {
+    background: #e3dcf0;
+    color: #756293;
+}
+
+.doctor-number {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    color: rgba(23, 60, 56, 0.44);
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.professional-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 21px 19px;
+}
+
+.professional-specialty {
+    margin-bottom: 7px;
+    color: var(--color-primary);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.professional-card h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.35;
+}
+
+.professional-card-body > p {
+    margin: 0 0 18px;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.professional-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding-top: 12px;
+    color: var(--color-primary);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.professional-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.team-cta {
+    padding-block: 52px;
+    background: #edf5f1;
+}
+
+.team-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.team-cta h2 {
+    margin: 8px 0;
+    font-size: clamp(22px, 3vw, 30px);
+    letter-spacing: -0.035em;
+}
+
+.team-cta p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .team-hero-inner {
+        min-height: 0;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-block: 56px 45px;
+    }
+
+    .team-hero h1 {
+        font-size: clamp(38px, 10vw, 50px);
+    }
+
+    .team-hero p {
+        font-size: 13px;
+    }
+
+    .team-hero-art {
+        width: min(70%, 240px);
+    }
+
+    .team-section {
+        padding-block: 60px 70px;
+    }
+
+    .team-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    .team-heading > p {
+        font-size: 12px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .professional-card-header {
+        min-height: 118px;
+    }
+
+    .professional-card-body {
+        padding: 19px;
+    }
+
+    .team-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

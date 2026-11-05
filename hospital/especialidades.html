@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4faf8">
+    <meta name="description" content="Conheça os atendimentos e profissionais do Hospital Vida & Cuidado.">
+    <title>Atendimentos e especialidades | Hospital Vida & Cuidado</title>
+    <link rel="stylesheet" href="especialidades.css">
+    <script src="especialidades.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="site-nav container" aria-label="Navegação principal">
+            <a class="brand" href="inicio.html" aria-label="Hospital Vida & Cuidado — página inicial">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="inicio.html">Início</a>
+                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                <a class="nav-link is-current" href="especialidades.html" aria-current="page">Atendimentos</a>
+                <a class="nav-link" href="Profissionais.html">Profissionais</a>
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                <a class="nav-cta" href="simulacao.html">Agende sua consulta <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="specialties-hero">
+            <div class="container specialties-hero-inner">
+                <div>
+                    <span class="eyebrow"><span class="eyebrow-dot"></span> Cuidado para cada fase da vida</span>
+                    <h1>Especialidades com<br><span>olhar humano.</span></h1>
+                    <p>Encontre o atendimento ideal para você e conheça os profissionais que cuidam da saúde da sua família.</p>
+                    <a class="button button-primary" href="simulacao.html">Agende sua consulta <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="specialties-hero-art" aria-hidden="true">
+                    <span class="specialty-art-ring ring-one"></span>
+                    <span class="specialty-art-ring ring-two"></span>
+                    <span class="specialty-art-plus">+</span>
+                    <span class="specialty-art-heart">♡</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties-section">
+            <div class="container">
+                <div class="specialties-heading">
+                    <div>
+                        <span class="eyebrow">Nossa equipe</span>
+                        <h2>Nossos atendimentos</h2>
+                    </div>
+                    <p>Profissionais preparados para acolher você com atenção, respeito e cuidado.</p>
+                </div>
+
+                <div class="specialties-tools">
+                    <div class="filter-group" role="group" aria-label="Filtrar atendimentos por especialidade">
+                        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+                        <button class="filter-button" type="button" data-filter="infancia" aria-pressed="false">Infância e juventude</button>
+                        <button class="filter-button" type="button" data-filter="longevidade" aria-pressed="false">Longevidade</button>
+                        <button class="filter-button" type="button" data-filter="familia" aria-pressed="false">Clínica da família</button>
+                        <button class="filter-button" type="button" data-filter="coracao" aria-pressed="false">Coração</button>
+                        <button class="filter-button" type="button" data-filter="movimento" aria-pressed="false">Movimento</button>
+                        <button class="filter-button" type="button" data-filter="saude-mental" aria-pressed="false">Saúde mental</button>
+                    </div>
+                    <label class="search-field">
+                        <span class="search-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Buscar atendimento ou profissional</span>
+                        <input id="specialty-search" type="search" placeholder="Buscar especialidade ou profissional" autocomplete="off">
+                    </label>
+                </div>
+
+                <p class="results-count" id="results-count" aria-live="polite">Exibindo 6 atendimentos</p>
+
+                <div class="specialty-grid" id="specialty-list">
+                    <article class="specialty-card" data-category="infancia" data-search="pediatria hebiatria saúde adolescente felipe velozo crianças jovens crescimento">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-peach" aria-hidden="true">✿</span>
+                            <span class="specialty-label">Infância e juventude</span>
+                        </div>
+                        <h3>Pediatria e Hebiatria</h3>
+                        <p class="specialty-subtitle">Saúde da criança e do adolescente</p>
+                        <p class="specialty-description">Dedicado ao acompanhamento completo desde os primeiros dias de vida até a fase da adolescência. Com um atendimento leve e descontraído, o Dr. Felipe garante que crianças e jovens se sintam seguros, acolhidos e compreendidos em todas as etapas do seu crescimento.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-peach" aria-hidden="true">FV</span>
+                            <span><small>Profissional</small><strong>Dr. Felipe Velozo</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="specialty-card" data-category="longevidade" data-search="geriatria medicina longevidade pedro damasceno idosos melhor idade autonomia qualidade vida">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-sage" aria-hidden="true">✳</span>
+                            <span class="specialty-label">Longevidade</span>
+                        </div>
+                        <h3>Geriatria e Medicina da Longevidade</h3>
+                        <p class="specialty-subtitle">Cuidado integral da melhor idade</p>
+                        <p class="specialty-description">Especialista no cuidado integral da melhor idade. O Dr. Pedro foca na prevenção, na manutenção da autonomia e na qualidade de vida dos nossos idosos, oferecendo um atendimento paciente, respeitoso e totalmente humanizado.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-sage" aria-hidden="true">PD</span>
+                            <span><small>Profissional</small><strong>Dr. Pedro Damasceno</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="specialty-card" data-category="familia" data-search="clínica médica atendimento família deivide bembem diagnóstico rotina prevenção doenças">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-blue" aria-hidden="true">⌁</span>
+                            <span class="specialty-label">Clínica da família</span>
+                        </div>
+                        <h3>Clínica Médica e Atendimento da Família</h3>
+                        <p class="specialty-subtitle">Prevenção e acompanhamento de rotina</p>
+                        <p class="specialty-description">O ponto de partida para o cuidado de toda a família. O Dr. Deivide é responsável por diagnósticos precisos, acompanhamento de rotina e prevenção de doenças, sempre com olhar atento e condições acessíveis para todos os pacientes.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-blue" aria-hidden="true">DB</span>
+                            <span><small>Profissional</small><strong>Dr. Deivide Bembem</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="specialty-card" data-category="coracao" data-search="cardiologia saúde cardiovascular coração marjorie fernanda prevenção condições cardíacas">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-rose" aria-hidden="true">♡</span>
+                            <span class="specialty-label">Coração</span>
+                        </div>
+                        <h3>Cardiologia e Saúde Cardiovascular</h3>
+                        <p class="specialty-subtitle">Saúde do coração em todas as gerações</p>
+                        <p class="specialty-description">Cuidando do coração de todas as gerações. A Dra. Marjorie une tecnologia de ponta e escuta empática para prevenir e tratar condições cardíacas, garantindo que pais, jovens e idosos mantenham o coração forte e saudável.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-rose" aria-hidden="true">MF</span>
+                            <span><small>Profissional</small><strong>Dra. Marjorie Fernanda</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="specialty-card" data-category="movimento" data-search="ortopedia traumatologia mobilidade lesões recuperação física kaiky guilherme">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-lilac" aria-hidden="true">⌁</span>
+                            <span class="specialty-label">Movimento</span>
+                        </div>
+                        <h3>Ortopedia e Traumatologia</h3>
+                        <p class="specialty-subtitle">Mobilidade e recuperação física</p>
+                        <p class="specialty-description">Focado na mobilidade, prevenção de lesões e recuperação física. Do jovem atleta que pratica esportes ao idoso que busca mais conforto ao caminhar, o Dr. Kaiky oferece tratamentos modernos para devolver o bem-estar e a liberdade de movimento.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-lilac" aria-hidden="true">KG</span>
+                            <span><small>Profissional</small><strong>Dr. Kaiky Guilherme</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="specialty-card" data-category="saude-mental" data-search="psicologia saúde mental emoções andrea mesquita adolescentes adultos idosos estresse ansiedade">
+                        <div class="specialty-card-top">
+                            <span class="specialty-icon icon-lilac" aria-hidden="true">♡</span>
+                            <span class="specialty-label">Saúde mental</span>
+                        </div>
+                        <h3>Psicologia e Saúde Mental</h3>
+                        <p class="specialty-subtitle">Acolhimento para cuidar das emoções</p>
+                        <p class="specialty-description">Um espaço seguro e sem julgamentos para cuidar das emoções. A Dra. Andrea atende adolescentes, adultos e idosos, auxiliando no manejo do estresse, ansiedade e nas transições da vida, reforçando que a saúde da mente é fundamental para a saúde do corpo.</p>
+                        <div class="professional">
+                            <span class="professional-avatar avatar-lilac" aria-hidden="true">AM</span>
+                            <span><small>Profissional</small><strong>Dra. Andrea Mesquita</strong></span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="empty-state" id="empty-state" hidden>
+                    <span class="empty-icon" aria-hidden="true">⌕</span>
+                    <h3>Nenhum atendimento encontrado</h3>
+                    <p>Tente outro termo ou escolha uma categoria diferente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="inicio.html">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <p>Medicina moderna, humana e acessível para toda a família.</p>
+            <span class="footer-copy">Cuidar de você é o que nos move.</span>
+        </div>
+    </footer>
+</body>
+</html>

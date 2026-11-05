@@ -1,0 +1,271 @@
+@import url("hospital.css");
+
+.about-hero {
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 86% 30%, rgba(201, 228, 216, 0.48), transparent 34%),
+        linear-gradient(115deg, #f7faf8 0%, #f2f8f5 54%, #edf6f1 100%);
+}
+
+.about-hero-inner {
+    position: relative;
+    min-height: 310px;
+    padding-block: 74px 68px;
+}
+
+.about-hero h1 {
+    position: relative;
+    z-index: 1;
+    margin: 15px 0 12px;
+    font-size: clamp(42px, 6vw, 62px);
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 1.1;
+}
+
+.about-hero h1 span,
+.about-section-heading h2 span,
+.about-values-heading h2 span {
+    color: var(--color-primary);
+}
+
+.about-hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 610px;
+    margin: 0;
+    color: #60736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-hero-mark {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    display: grid;
+    width: 190px;
+    height: 190px;
+    place-items: center;
+    border: 1px solid rgba(40, 124, 109, 0.15);
+    border-radius: 50%;
+    color: rgba(40, 124, 109, 0.17);
+    font-family: var(--font-display);
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
+.about-story {
+    padding-block: 82px 88px;
+}
+
+.about-story-grid {
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    gap: clamp(38px, 8vw, 100px);
+}
+
+.about-section-heading h2,
+.about-values-heading h2 {
+    margin: 12px 0 0;
+    font-size: clamp(32px, 4vw, 43px);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 1.2;
+}
+
+.story-accent {
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin-top: 21px;
+    border-radius: 3px;
+    background: #89bea2;
+}
+
+.about-story-copy p {
+    margin-bottom: 18px;
+    color: #60736d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.about-story-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.about-values {
+    padding-block: 78px 88px;
+    background: #f5f9f7;
+}
+
+.about-values-heading {
+    max-width: 720px;
+    margin-bottom: 32px;
+}
+
+.about-values-heading > p {
+    margin: 16px 0 0;
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.value-card {
+    min-height: 205px;
+    padding: 23px 24px;
+    border: 1px solid #e6efea;
+    border-radius: 13px;
+    background: #fff;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.value-card:hover {
+    transform: translateY(-3px);
+    border-color: #d3e6dc;
+    box-shadow: 0 14px 32px rgba(36, 83, 67, 0.07);
+}
+
+.value-number {
+    color: #72a98e;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.value-card h3 {
+    margin: 13px 0 8px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.value-card p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.about-purpose {
+    padding-block: 66px;
+}
+
+.purpose-panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 20px;
+    overflow: hidden;
+    padding: 34px 40px;
+    border: 1px solid #e6efea;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #f1f7f3, #f8faf8);
+}
+
+.purpose-icon {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 14px;
+    background: #e0eee6;
+    color: var(--color-primary);
+    font-size: 23px;
+}
+
+.purpose-panel h2 {
+    margin: 7px 0 9px;
+    font-size: clamp(23px, 3vw, 30px);
+    letter-spacing: -0.035em;
+}
+
+.purpose-panel p {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.purpose-decoration {
+    position: absolute;
+    right: 20px;
+    bottom: -72px;
+    color: rgba(40, 124, 109, 0.08);
+    font-family: var(--font-display);
+    font-size: 200px;
+    line-height: 1;
+}
+
+@media (max-width: 680px) {
+    .about-hero-inner {
+        min-height: 260px;
+        padding-block: 57px;
+    }
+
+    .about-hero p {
+        max-width: 85%;
+        font-size: 13px;
+    }
+
+    .about-hero-mark {
+        right: -56px;
+        width: 140px;
+        height: 140px;
+        font-size: 130px;
+    }
+
+    .about-story,
+    .about-values {
+        padding-block: 62px;
+    }
+
+    .about-story-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .about-story-copy p {
+        font-size: 13px;
+    }
+
+    .about-values-heading > p {
+        font-size: 13px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .value-card {
+        min-height: 0;
+    }
+
+    .about-purpose {
+        padding-block: 48px;
+    }
+
+    .purpose-panel {
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        padding: 24px 18px;
+    }
+
+    .purpose-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

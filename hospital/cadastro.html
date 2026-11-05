@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4faf8">
+    <meta name="description" content="Crie sua conta no Hospital Vida & Cuidado para cuidar da saúde de toda a família.">
+    <title>Cadastro | Hospital Vida & Cuidado</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="site-nav container" aria-label="Navegação principal">
+            <a class="brand" href="inicio.html" aria-label="Hospital Vida & Cuidado — página inicial">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="inicio.html">Início</a>
+                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                <a class="nav-link" href="especialidades.html">Atendimentos</a>
+                <a class="nav-link" href="Profissionais.html">Profissionais</a>
+                <a class="nav-link is-current" href="cadastro.html" aria-current="page">Cadastro</a>
+                <a class="nav-cta" href="simulacao.html">Agende sua consulta <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="registration-main">
+        <div class="container registration-layout">
+            <section class="registration-intro" aria-labelledby="registration-title">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> Um cuidado mais perto de você</span>
+                <h1 id="registration-title">Crie sua conta no<br><span>Vida & Cuidado.</span></h1>
+                <p>Estamos felizes em ter você aqui! Faça seu cadastro para agendar consultas, acessar resultados de exames e cuidar da saúde de toda a sua família em um só lugar.</p>
+                <div class="registration-promise">
+                    <span class="promise-icon" aria-hidden="true">♡</span>
+                    <p><strong>Leva menos de 2 minutos</strong><br>Seus dados merecem cuidado e respeito.</p>
+                </div>
+                <div class="registration-decoration" aria-hidden="true">
+                    <span class="decoration-ring ring-one"></span>
+                    <span class="decoration-ring ring-two"></span>
+                    <span class="decoration-plus">+</span>
+                </div>
+            </section>
+
+            <section class="registration-card" aria-labelledby="form-title">
+                <div class="form-heading">
+                    <span class="eyebrow">Seja bem-vindo</span>
+                    <h2 id="form-title">Seus dados</h2>
+                    <p>Preencha as informações para iniciar seu cadastro.</p>
+                </div>
+
+                <form id="registration-form">
+                    <div class="form-field">
+                        <label for="full-name">Nome completo</label>
+                        <input id="full-name" name="name" type="text" placeholder="Como podemos chamar você?" autocomplete="name" minlength="3" maxlength="100" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">E-mail</label>
+                            <input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" maxlength="254" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Celular</label>
+                            <input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="tel" maxlength="16" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="password">Crie uma senha</label>
+                            <div class="password-control">
+                                <input id="password" name="password" type="password" placeholder="Mínimo de 8 caracteres" autocomplete="new-password" minlength="8" maxlength="128" aria-describedby="password-hint" required>
+                                <button class="password-toggle" type="button" data-password-toggle="password" aria-label="Mostrar senha" aria-pressed="false">Mostrar</button>
+                            </div>
+                            <small class="field-hint" id="password-hint">Use pelo menos 8 caracteres.</small>
+                        </div>
+                        <div class="form-field">
+                            <label for="confirm-password">Confirme sua senha</label>
+                            <div class="password-control">
+                                <input id="confirm-password" name="confirm-password" type="password" placeholder="Digite a senha novamente" autocomplete="new-password" minlength="8" maxlength="128" required>
+                                <button class="password-toggle" type="button" data-password-toggle="confirm-password" aria-label="Mostrar confirmação da senha" aria-pressed="false">Mostrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="consent-field">
+                        <input id="consent" name="consent" type="checkbox" required>
+                        <span>Autorizo o uso dos dados informados para a criação e gestão da minha conta no Hospital Vida & Cuidado.</span>
+                    </label>
+
+                    <button class="button button-primary submit-button" type="submit">Criar minha conta <span aria-hidden="true">→</span></button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+                    <p class="form-disclaimer">Este formulário ainda não está conectado ao sistema do hospital. Nenhum dado será enviado ou armazenado.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="inicio.html">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <p>Medicina moderna, humana e acessível para toda a família.</p>
+            <span class="footer-copy">Cuidar de você é o que nos move.</span>
+        </div>
+    </footer>
+</body>
+</html>

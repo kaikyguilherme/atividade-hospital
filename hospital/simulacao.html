@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4faf8">
+    <meta name="description" content="Simule um agendamento no Hospital Vida & Cuidado e visualize um resumo da consulta.">
+    <title>Agendamento | Hospital Vida & Cuidado</title>
+    <link rel="stylesheet" href="simulacao.css">
+    <script src="simulacao.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="site-nav container" aria-label="Navegação principal">
+            <a class="brand" href="inicio.html" aria-label="Hospital Vida & Cuidado — página inicial">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <div class="nav-links">
+                <a class="nav-link" href="inicio.html">Início</a>
+                <a class="nav-link" href="sobre.html">Sobre nós</a>
+                <a class="nav-link" href="especialidades.html">Atendimentos</a>
+                <a class="nav-link" href="Profissionais.html">Profissionais</a>
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                <a class="nav-cta is-current" href="simulacao.html" aria-current="page">Agendamento <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment-hero">
+            <div class="container appointment-hero-inner">
+                <div>
+                    <span class="eyebrow"><span class="eyebrow-dot"></span> No seu tempo, com todo cuidado</span>
+                    <h1>Planeje seu<br><span>atendimento.</span></h1>
+                    <p>Cuidar da sua saúde e da sua família é simples. Escolha a especialidade, o profissional e um horário para visualizar sua simulação.</p>
+                </div>
+                <div class="appointment-hero-art" aria-hidden="true">
+                    <span class="appointment-art-ring ring-one"></span>
+                    <span class="appointment-art-ring ring-two"></span>
+                    <span class="appointment-art-calendar"><span>♡</span><strong>+</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointment-section">
+            <div class="container appointment-layout">
+                <section class="appointment-card" aria-labelledby="appointment-form-title">
+                    <div class="appointment-heading">
+                        <span class="eyebrow">Vamos começar</span>
+                        <h2 id="appointment-form-title">Escolha seu atendimento</h2>
+                        <p>Selecione as opções para montar um resumo personalizado.</p>
+                    </div>
+
+                    <form id="appointment-form">
+                        <div class="form-field">
+                            <label for="specialty">Especialidade</label>
+                            <select id="specialty" name="specialty" required>
+                                <option value="">Selecione uma especialidade</option>
+                                <option value="pediatria">Pediatria e Hebiatria</option>
+                                <option value="geriatria">Geriatria e Medicina da Longevidade</option>
+                                <option value="clinica">Clínica Médica e Atendimento da Família</option>
+                                <option value="cardiologia">Cardiologia e Saúde Cardiovascular</option>
+                                <option value="ortopedia">Ortopedia e Traumatologia</option>
+                                <option value="psicologia">Psicologia e Saúde Mental</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="professional">Profissional</label>
+                            <select id="professional" name="professional" required disabled>
+                                <option value="">Escolha primeiro uma especialidade</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="appointment-date">Data</label>
+                            <input id="appointment-date" name="date" type="date" required>
+                        </div>
+
+                        <fieldset class="time-fieldset">
+                            <legend>Horário</legend>
+                            <p class="time-hint">Escolha uma opção para sua simulação.</p>
+                            <div class="time-options">
+                                <label class="time-option"><input type="radio" name="time" value="08:00" required><span>08:00</span></label>
+                                <label class="time-option"><input type="radio" name="time" value="09:30"><span>09:30</span></label>
+                                <label class="time-option"><input type="radio" name="time" value="11:00"><span>11:00</span></label>
+                                <label class="time-option"><input type="radio" name="time" value="13:30"><span>13:30</span></label>
+                                <label class="time-option"><input type="radio" name="time" value="15:00"><span>15:00</span></label>
+                                <label class="time-option"><input type="radio" name="time" value="16:30"><span>16:30</span></label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+
+                <aside class="summary-card" aria-labelledby="summary-title">
+                    <div class="summary-header">
+                        <span class="summary-icon" aria-hidden="true">♡</span>
+                        <span class="eyebrow">Prévia</span>
+                    </div>
+                    <h2 id="summary-title">Resumo da simulação</h2>
+                    <p class="summary-intro">Os detalhes escolhidos aparecerão aqui.</p>
+
+                    <dl class="summary-details">
+                        <div class="summary-item">
+                            <dt>Especialidade</dt>
+                            <dd id="summary-specialty">A selecionar</dd>
+                        </div>
+                        <div class="summary-item">
+                            <dt>Profissional</dt>
+                            <dd id="summary-professional">A selecionar</dd>
+                        </div>
+                        <div class="summary-item">
+                            <dt>Data</dt>
+                            <dd id="summary-date">A selecionar</dd>
+                        </div>
+                        <div class="summary-item">
+                            <dt>Horário</dt>
+                            <dd id="summary-time">A selecionar</dd>
+                        </div>
+                    </dl>
+
+                    <p class="simulation-notice"><span aria-hidden="true">i</span> Esta é apenas uma simulação. Nenhuma consulta será criada ou confirmada.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="inicio.html">
+                <span class="brand-mark" aria-hidden="true">+</span>
+                <span class="brand-name">vida <strong>& cuidado</strong><small>HOSPITAL</small></span>
+            </a>
+            <p>Medicina moderna, humana e acessível para toda a família.</p>
+            <span class="footer-copy">Cuidar de você é o que nos move.</span>
+        </div>
+    </footer>
+</body>
+</html>
